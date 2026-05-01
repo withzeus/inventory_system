@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { useForm, usePage } from '@inertiajs/vue3';
-import { computed, ref } from 'vue';
+import { ref } from 'vue';
 
 const page = usePage();
-
-const user = computed(() => page.props.auth.user);
 
 const showPassword = ref(false);
 
