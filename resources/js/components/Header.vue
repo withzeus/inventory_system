@@ -2,6 +2,7 @@
 import { useSidebar } from '@/composables/useSidebar';
 import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
+import panda from '@/assets/images/panda.png';
 
 const dropdownOpen = ref(false);
 const { isOpen } = useSidebar();
@@ -31,30 +32,6 @@ const { isOpen } = useSidebar();
                     />
                 </svg>
             </button>
-
-            <div class="relative mx-4 lg:mx-0">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <svg
-                        class="h-5 w-5 text-gray-500"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                    >
-                        <path
-                            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </span>
-
-                <input
-                    class="focus:ring-opacity-40 w-32 rounded-md border-gray-200 pr-4 pl-10 text-gray-600 focus:border-gray-600 focus:ring focus:ring-gray-500 sm:w-64"
-                    type="text"
-                    placeholder="Search"
-                />
-            </div>
         </div>
 
         <div class="flex items-center">
@@ -82,7 +59,7 @@ const { isOpen } = useSidebar();
                 >
                     <img
                         class="h-full w-full object-cover"
-                        src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=296&q=80"
+                        :src="panda"
                         alt="Your avatar"
                     />
                 </button>

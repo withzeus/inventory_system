@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useForm, usePage } from '@inertiajs/vue3';
+import { useForm, Link } from '@inertiajs/vue3';
 import { ref } from 'vue';
-
-const page = usePage();
 
 const showPassword = ref(false);
 
@@ -168,10 +166,10 @@ const login = () => {
                     </div>
 
                     <div>
-                        <a
+                        <Link
                             class="fontme block text-sm text-indigo-700 hover:underline"
-                            href="#"
-                            >Forgot your password?</a
+                            href="/register"
+                            >Register here!</Link
                         >
                     </div>
                 </div>

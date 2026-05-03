@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Providers;
+
+use App\Repositories\E\ProductRepository;
+use App\Repositories\ProductRepositoryInterface;
+use Illuminate\Support\ServiceProvider;
+
+class InventoryServiceProvider extends ServiceProvider
+{
+    /**
+     * Register services.
+     */
+    public function register(): void
+    {
+        $this->app->bind(
+            ProductRepositoryInterface::class,
+            ProductRepository::class
+        );
+    }
+
+    /**
+     * Bootstrap services.
+     */
+    public function boot(): void
+    {
+        //
+    }
+}

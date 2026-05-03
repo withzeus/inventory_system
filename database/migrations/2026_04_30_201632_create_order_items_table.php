@@ -20,7 +20,6 @@ return new class extends Migration
                 ->constrained()
                 ->cascadeOnDelete();
             $table->integer('quantity');
-            $table->integer('price');
             $table->timestamps();
 
             $table->index(['order_id', 'product_id']);

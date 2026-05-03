@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->group(function () {
     Route::inertia('/', 'Dashboard')->name('dashboard');
 
+    Route::inertia('/products', 'Products')->name('products');
+    Route::inertia('/orders', 'Orders')->name('orders');
+
     Route::get('/user', [AuthController::class, 'getUser'])->name('user');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
