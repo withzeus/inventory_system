@@ -65,7 +65,4 @@ For Production:
 php artisan serve
 ```
 
-<video width="100%" controls>
-  <source src="./static/Recording 2026-05-03 222935.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Inventory System Demo](./static/demo.gif)
